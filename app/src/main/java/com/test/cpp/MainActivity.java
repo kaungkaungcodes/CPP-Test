@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             System.loadLibrary("soko-lib");
             Log.d("LibraryLoad", "Library loaded successfully");
         } catch (UnsatisfiedLinkError e) {
-            Log.e("LibraryLoad", "Failed to load library: " + e.getMessage());
+            Log.e("LibraryLoad", "Failed to load cpp library: " + e.getMessage());
         }
     }
 
